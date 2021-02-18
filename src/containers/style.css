@@ -1,5 +1,13 @@
 /* Home container Style-sheet */
-
+.home {
+  width: 100vw;
+  height: auto;
+  padding: 0px 50px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 1350px;
+  margin: 0px auto;
+}
 .home-left {
   width: 40%;
 }
@@ -129,7 +137,7 @@
 }
 .bg-electronics {
   position: absolute;
-  width: 500px;
+  width: 60%;
   bottom: 0px;
   right: 0px;
   z-index: -2;
@@ -174,16 +182,22 @@
   flex-direction: column;
 }
 .download-btn {
-  width: 75%;
+  width: 100%;
   margin: 10px auto 0px auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 10px;
 }
 .experiments h3 {
   margin: 5px auto;
 }
-
+@media screen and (max-width: 480px) {
+  body {
+    background-color:white;
+    font-size: 10px;
+  }
+}
 /* Logic gate simulator stylesheet */
 .logic-gate-simulator {
   width: 100%;
@@ -246,41 +260,4 @@
 }
 .welcome__text {
   color: #2a6f74;
-}
-
-
-/* home page responsive */
-
-@media only screen and (min-width: 600px){
-  .home {
-    width: 100vw;
-    height: auto;
-    padding: 0px 50px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    max-width: 1350px;
-    margin: 0px auto;
-  }
-}
-
-
-@media only screen and (max-width: 600px){
-  .home{
-    flex-direction: column-reverse;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    overflow-y: scroll;
-    height: auto;
-  }
-  .welcome__text{
-    font-size: 30px !important;
-
-  }
-  .home-left{
-    width: 100%;
-  }
-  .atom-bg{
-    width: 100%;
-  }
 }

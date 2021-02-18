@@ -21,20 +21,3 @@ h3.footer__last {
 h3.footer__last:hover {
   color: white;
 }
-
-/* phone stylesheet */
-
-
-@media only screen and (max-width: 600px){
-  .footer{
-    width: 96%;
-    border-radius: 5px;
-    position: relative;
-    left: 0px;
-    height: auto;
-    text-align: center;
-    padding: 10px 0px;
-    margin: 20px 2% 2% 10px;
-    box-sizing: border-box;
-  }
-}
