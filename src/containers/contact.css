@@ -7,3 +7,13 @@ div h1 {
   font-size: 40px;
   color: darkblue;
 }
+@media screen and (max-width: 480px){
+	p{
+		font-size: 15px;
+	}
+}
+@media screen and (min-width: 375px){
+	p{
+		font-size: 20px;
+	}
+}
